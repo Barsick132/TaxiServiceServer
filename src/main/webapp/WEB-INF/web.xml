@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+  version="2.5">
+  <servlet>
+    <servlet-name>counterCost</servlet-name>
+    <servlet-class>com.lstu.kovalchuk.taxiserviceserver.CounterCost</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>createOrder</servlet-name>
+    <servlet-class>com.lstu.kovalchuk.taxiserviceserver.CreateOrder</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>counterCost</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>createOrder</servlet-name>
+    <url-pattern>/createOrder</url-pattern>
+  </servlet-mapping>
+</web-app>
